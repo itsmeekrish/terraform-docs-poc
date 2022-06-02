@@ -1,3 +1,7 @@
+# AWS Code Build Terraform module
+
+Terraform module which creates AWS Code Build resources by connecting Github webhook
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
