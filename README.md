@@ -14,7 +14,7 @@ Terraform module which creates AWS Code Build resources by connecting Github web
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 3.27 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 3.75.2 |
 
 ## Modules
 
