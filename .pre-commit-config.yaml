@@ -12,4 +12,4 @@ repos:
     rev: v4.2.0
     hooks:
       - id: check-merge-conflict
-      - id: end-of-file-fixer
+      - id: end-of-file-fixerh
