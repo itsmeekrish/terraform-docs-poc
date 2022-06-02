@@ -48,7 +48,6 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_GITHUB_PERSONAL_TOKEN"></a> [GITHUB\_PERSONAL\_TOKEN](#input\_GITHUB\_PERSONAL\_TOKEN) | Github personal access token | `string` | `""` | no |
-| <a name="input_bucket_name"></a> [bucket\_name](#input\_bucket\_name) | Name of the S3 bucket | `string` | `"poc-codebuild-artifact"` | no |
 
 ## Outputs
 
