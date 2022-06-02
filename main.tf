@@ -8,7 +8,7 @@ resource "aws_s3_bucket_acl" "poc_codebuild_artifact_acl" {
 }
 
 resource "aws_iam_role" "codebuild_role" {
-  name = "codebuild_role"
+  name = var.iam_role
 
   assume_role_policy = <<EOF
 {
@@ -220,7 +220,7 @@ resource "aws_codebuild_source_credential" "personal_token" {
 }
 
 resource "aws_codebuild_project" "poc_codebuild" {
-  name          = "poc-codebuild"
+  name          = var.codebuild_project_name
   description   = "poc for codebuild"
   build_timeout = "5"
   service_role  = "${aws_iam_role.codebuild_role.arn}"
