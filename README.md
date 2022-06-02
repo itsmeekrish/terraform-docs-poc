@@ -49,6 +49,8 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_GITHUB_PERSONAL_TOKEN"></a> [GITHUB\_PERSONAL\_TOKEN](#input\_GITHUB\_PERSONAL\_TOKEN) | Github personal access token | `string` | `""` | no |
 | <a name="input_bucket_name"></a> [bucket\_name](#input\_bucket\_name) | Name of the S3 bucket | `string` | `"poc-codebuild-artifact"` | no |
+| <a name="input_codebuild_project_name"></a> [codebuild\_project\_name](#input\_codebuild\_project\_name) | Name of the code build project | `string` | `"poc-codebuild"` | no |
+| <a name="input_iam_role"></a> [iam\_role](#input\_iam\_role) | IAM role name for the code build resource | `string` | `"codebuild_role"` | no |
 
 ## Outputs
 
