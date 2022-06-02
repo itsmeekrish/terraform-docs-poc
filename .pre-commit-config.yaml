@@ -1,6 +1,5 @@
 repos:
-  - repo: https://github.com/antonbabenko/pre-commit-terraform
-    rev: v1.68.1
+  - repo: https://github.com/itsmeekrish/terraform-docs-poc
     hooks:
       - id: terraform_fmt
       - id: terraform_validate
