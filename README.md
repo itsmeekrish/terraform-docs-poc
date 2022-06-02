@@ -2,6 +2,10 @@
 
 Terraform module which creates AWS Code Build resources by connecting Github webhook
 
+# Invoke pre-hook by running the below command inside the directory
+
+git config core.hooksPath githooks
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
