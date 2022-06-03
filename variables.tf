@@ -21,9 +21,3 @@ variable "codebuild_project_name" {
     description = "Name of the code build project"
     default = "poc-codebuild"
 }
-
-variable "codebuild_project" {
-    type = string
-    description = "Name test"
-    default = ""
-}
