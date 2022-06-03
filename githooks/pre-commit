@@ -1,8 +1,12 @@
 #!/bin/sh
 
+# install terraform-docs if it is not installed
 if ! which terraform-docs > /dev/null; then
    brew install terraform-docs
 fi
 
+# update README.md file with the latest changes to the terraform code
 terraform-docs markdown table --output-file README.md --output-mode inject .
+
+# add and commit updated README.md file
 git add README.md && git commit --no-verify -m "Updated README.md file"
