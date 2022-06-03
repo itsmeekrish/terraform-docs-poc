@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if terraform-docs --version | grep -q "command not found" 
+if [ terraform-docs --version | grep -q "command not found" ]
     then brew install terraform-docs
     else terraform-docs --version
 fi
