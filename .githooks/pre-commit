@@ -6,7 +6,7 @@ if ! which terraform-docs > /dev/null; then
 fi
 
 # update README.md file with the latest changes to the terraform code
-terraform-docs markdown table --output-file README.md --output-mode inject module/code-build
+terraform-docs markdown table --output-file ../../README.md --output-mode inject module/code-build
 
 # add and commit updated README.md file
 git add README.md && git commit --no-verify -m "Updated README.md file"
