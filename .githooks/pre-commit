@@ -5,8 +5,17 @@ if ! which terraform-docs > /dev/null; then
    brew install terraform-docs
 fi
 
-# update README.md file with the latest changes to the terraform code
-terraform-docs markdown table --output-file ../../README.md --output-mode inject module/code-build
+#!/bin/sh
+
+# Keep module docs up to date
+for d in modules/*; do
+  if terraform-docs md "$d" > "$d/README.md"; then
+    git add "./$d/README.md"
+  fi
+done
+
+# # update README.md file with the latest changes to the terraform code
+# terraform-docs markdown table --output-file ../../README.md --output-mode inject module/code-build
 
 # add and commit updated README.md file
 git add README.md && git commit --no-verify -m "Updated README.md file"
