@@ -1,3 +1,7 @@
+# AWS S3 Terraform module
+
+Terraform module which creates AWS S3 resources by connecting Github webhook
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
