@@ -5,7 +5,7 @@ if ! which terraform-docs > /dev/null; then
    brew install terraform-docs
 fi
 
-# Keep module docs up to date
+# Keep module docs up to date in modules directory
 for d in modules/*; do
   if terraform-docs md "$d" > "$d/README.md"; then
     git add "./$d/README.md"
