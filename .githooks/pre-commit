@@ -7,7 +7,7 @@ fi
 
 # Keep module docs up to date in modules directory
 for d in modules/*; do
-  if terraform-docs markdown table --output-file README.md --output-mode inject "$d/"; then
+  if terraform-docs md "$d" > "$d/README.md"; then
     git add "./$d/README.md"
   fi
 done
