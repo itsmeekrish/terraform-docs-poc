@@ -12,8 +12,9 @@ for d in modules/*; do
   fi
 done
 
-# # update README.md file with the latest changes to the terraform code
-terraform-docs markdown table --output-file README.md --output-mode inject .
+# update README.md file with the latest changes to the terraform code over a specific path
+# terraform-docs markdown table --output-file README.md --output-mode inject .
+# git add README.md
 
-# add and commit updated README.md file
-git add README.md && git commit --no-verify -m "Updated README.md file"
+# commit updated README.md files
+git commit --no-verify -m "Updated README.md files"
